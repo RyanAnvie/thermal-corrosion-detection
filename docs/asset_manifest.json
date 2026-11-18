@@ -1,0 +1,44 @@
+[
+  {
+    "file": "assets/images/experimental-setup.jpg",
+    "source": "AMPP_2026/github_assets/experimental-setup.jpg",
+    "sha256": "cfe931fff508e2c924e8db7d1f745dc9d59d7d130ed2e9479e0944ff94b8ab2d",
+    "operation": "byte-for-byte copy"
+  },
+  {
+    "file": "assets/images/thermal-feature-maps.png",
+    "source": "AMPP_2026/github_assets/thermal-feature-maps.png",
+    "sha256": "fb506e62499362c9ca397280817626bda8c9586ff6e04ab3c5519cafea778711",
+    "operation": "byte-for-byte copy"
+  },
+  {
+    "file": "assets/images/thermal-feature-maps.svg",
+    "source": "AMPP_2026/github_assets/thermal-feature-maps.svg",
+    "sha256": "dedcb620705da20a2f16cf645f17b30c7f1ac9e854eba88b0bbf9300d96384f4",
+    "operation": "byte-for-byte copy"
+  },
+  {
+    "file": "assets/video/thermal-heating.mp4",
+    "source": "ampp_2027/paper_build/animation_first_2p5s/thermal_heating_first_2p5s_slow.mp4",
+    "sha256": "cb28bc40ff14e097c3a692356178f1a78a34a632667727be0a7cfa6892688e07",
+    "operation": "byte-for-byte copy"
+  },
+  {
+    "file": "assets/video/thermal-heating.gif",
+    "source": "ampp_2027/paper_build/animation_first_2p5s/thermal_heating_first_2p5s_slow.gif",
+    "sha256": "1a0c1296cd01c39617397134845fb94846b3a702f4ba03f7f2d453128d3ad3b2",
+    "operation": "byte-for-byte copy"
+  },
+  {
+    "file": "assets/images/heating-preview.png",
+    "source": "ampp_2027/paper_build/animation_first_2p5s/layout_preview.png",
+    "sha256": "2ea612604742f1efbf0e1176c8fcaa838becf715ff5711c9b7fe55a84bcb2e3d",
+    "operation": "byte-for-byte copy"
+  },
+  {
+    "file": "data/regional_temperature_curves.csv",
+    "source": "ampp_2027/paper_build/animation_first_2p5s/regional_temperature_curves.csv",
+    "sha256": "e8c001a4112b092173280ba6e8f497ff4c20905d54473a8fdf1faf79ca830cc1",
+    "operation": "byte-for-byte copy"
+  }
+]

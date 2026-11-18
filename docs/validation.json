@@ -1,0 +1,127 @@
+{
+  "checked_on": "2026-11-18",
+  "original_files_unchanged_count": 20,
+  "copied_assets_byte_identical_count": 7,
+  "sample_shape": [
+    151,
+    505,
+    151
+  ],
+  "sample_dtype": "float32",
+  "sample_extraction_round_trip_exact": true,
+  "sample_array_sha256": "7e22256f34f153806182768cfa5211631cb020bf538ecdb3ec6c562fea019c8c",
+  "full_record_curve_rows": 9000,
+  "animation_roi_curve_max_error_C": {
+    "corroded_temperature_C": 0.0,
+    "non_corroded_temperature_C": 0.0
+  },
+  "python_scripts_reviewed": [
+    "prepare_sample.py",
+    "sigmoid_gmm.py",
+    "thermal_heating_animation.py"
+  ],
+  "decorators_or_classes_added": false,
+  "portable_local_markdown_links_checked": 12,
+  "full_video_decodes_passed": {
+    "assets/video/thermal-heating.mp4": {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration": "11.533333",
+      "nb_read_frames": "346"
+    },
+    "outputs/animation/thermal_heating_first_2p5s_slow.mp4": {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration": "11.533333",
+      "nb_read_frames": "346"
+    }
+  },
+  "fit_run": {
+    "input": "early_heating.npz",
+    "source_frame_range_end_exclusive": [
+      1,
+      150
+    ],
+    "fps": 60.0,
+    "fit_time_origin": "First frame in selected fitting window",
+    "temperature_unit": "degree Celsius",
+    "denoising_enabled": true,
+    "denoising": {
+      "method": "per-frame positive-pixel min-max to uint8; OpenCV NLM; inverse scaling",
+      "h": 20,
+      "template_window": 7,
+      "search_window": 21
+    },
+    "bounds_lower_A_k_t0_B": [
+      0.0,
+      0.01,
+      0.0,
+      20.0
+    ],
+    "bounds_upper_A_k_t0_B": [
+      2.0,
+      5.0,
+      2.466666666666667,
+      30.0
+    ],
+    "missing_input_samples": 0,
+    "fit_status_codes": {
+      "0": "success",
+      "1": "fewer than five valid samples",
+      "2": "fit failed"
+    },
+    "fit_status_counts": {
+      "0": 67774,
+      "1": 8481,
+      "2": 0
+    },
+    "GMM_features": [
+      "A",
+      "k",
+      "t0"
+    ],
+    "feature_standardization": false,
+    "random_seed": 42,
+    "GMM_converged": true,
+    "GMM_means_A_k_t0": [
+      [
+        0.24380844831466675,
+        2.02767014503479,
+        1.125954031944275
+      ],
+      [
+        0.3534862697124481,
+        4.614162921905518,
+        0.7229841947555542
+      ]
+    ],
+    "cluster_labels": "Arbitrary cluster IDs; no independent corrosion truth supplied",
+    "versions": {
+      "python": "3.10.18",
+      "numpy": "2.2.6",
+      "scipy": "1.15.2",
+      "scikit-learn": "1.7.2",
+      "opencv": "4.12.0",
+      "joblib": "1.5.3",
+      "matplotlib": "3.10.8"
+    }
+  },
+  "animation_test_environment": {
+    "python": "3.12.4",
+    "numpy": "1.26.4",
+    "matplotlib": "3.8.4"
+  },
+  "limitations": [
+    "No independent corrosion ground truth supplied",
+    "The historical six-map image was preserved, not numerically regenerated pixel-for-pixel",
+    "Native Conda library paths required activation for the local fitting run",
+    "No interactive figure window is used; interactive resizing was not tested",
+    "README relative links checked locally; no remote GitHub publication performed"
+  ]
+}
